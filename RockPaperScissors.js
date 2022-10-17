@@ -88,7 +88,7 @@ function game(){
 
     }
     
-    let gameCondition=userScore>computerScore?0:1;
+    let gameCondition=userScore>computerScore?1:0;
     console.log(`Your score: ${userScore}, CPU score: ${computerScore}.`)
 
     switch(gameCondition){
