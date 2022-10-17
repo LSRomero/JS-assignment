@@ -1,9 +1,9 @@
-/*Objects*/
+//Objects
 const rock ={"paper":0,"scissor":1,"rock":1}; 
 const paper ={"paper":1,"scissor":0,"rock":1};
 const scissor ={"paper":1,"scissor":1,"rock":0};
 const elements ={"paper": paper,"scissor":scissor,"rock":rock}
-/*Objects*/ 
+//Objects
 
 const playerSelection = userPlay();
 const computerSelection = computerPlay();
@@ -14,7 +14,7 @@ console.log(gameResult);
 game();
 
 
-/* Returns guess */
+//Returns guess
 function userPlay(){
     let userGuess = prompt('It/s Rock Paper Scissors time! Pick a guess:');
 
@@ -31,7 +31,7 @@ function userPlay(){
 }
 function computerPlay(){
     console.log('Waiting for computer/s guess...')
-    let condition =Math.round(Math.random()*2); /*Random Number between 0-2*/
+    let condition =Math.round(Math.random()*2); //Random Number between 0-2
     
 
     switch(condition){
@@ -43,9 +43,9 @@ function computerPlay(){
             return "scissor";
     }
 }
-/* Returns guess */
+//Returns guess
 
-/*Game*/
+//Game
 function playRound(pSelection,cSelection){
     let userElement = elements[pSelection];
     let computerElement = elements[cSelection];
@@ -96,7 +96,7 @@ function game(){
             console.log('You lose!');
             break;
         case 1:
-            /*check for draw*/ 
+            //check for draw
             if(userScore==computerScore){
                 console.log('No one wins');
             }
@@ -106,4 +106,4 @@ function game(){
     }
     
 }
-/*Game*/ 
+//Game
